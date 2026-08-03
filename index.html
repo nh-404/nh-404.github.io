@@ -109,41 +109,182 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section id="home" class="pt-28 pb-12 px-6 max-w-5xl mx-auto text-center md:text-left flex flex-col md:flex-row items-center gap-10 min-h-[70vh]">
-    <div class="flex-1 space-y-5">
-      <span class="inline-block bg-indigo-900/40 text-indigo-200 text-xs font-semibold px-4 py-1.5 rounded-full border border-indigo-400/30 backdrop-blur-sm">
-        <i class="fas fa-rocket mr-1"></i> Backend Developer
-      </span>
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-        Hi, I'm <br class="sm:hidden">
-        <span class="bg-gradient-to-r from-violet-400 via-indigo-400 to-blue-400 bg-clip-text text-transparent">Tasnimul Hasan</span>
+<section
+  id="home"
+  class="relative overflow-hidden pt-32 pb-20 px-6">
+
+  <!-- Background -->
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-indigo-600/20 blur-[120px] rounded-full"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-violet-600/20 blur-[120px] rounded-full"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,.04),transparent_70%)]"></div>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+
+    <!-- Left -->
+    <div>
+
+      <!-- Badge -->
+      <div
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-emerald-400/20 bg-emerald-500/10 backdrop-blur">
+
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+
+        <span class="text-sm text-emerald-300">
+          Available for Freelance
+        </span>
+
+      </div>
+
+      <!-- Heading -->
+
+      <h1
+        class="mt-6 text-5xl lg:text-7xl font-extrabold leading-tight">
+
+        Hi, I'm
+
+<span
+  class="inline-block bg-gradient-to-r from-indigo-400 via-violet-400 to-sky-400 bg-clip-text text-transparent">
+  Tasnimul Hasan
+</span>
+
       </h1>
-      <p class="text-slate-300 text-lg max-w-md mx-auto md:mx-0">
-        Backend Developer specializing in Python and Django, with hands-on experience in building scalable APIs, database-driven applications, and modern DevOps workflows. Passionate about writing clean, maintainable code and delivering reliable software.
+
+      <p
+        class="mt-6 text-lg text-slate-300 max-w-xl leading-8">
+
+        Backend Developer specializing in
+        <span class="text-indigo-300 font-semibold">
+          Python
+        </span>,
+        <span class="text-indigo-300 font-semibold">
+          Django
+        </span>,
+        REST APIs,
+        PostgreSQL,
+        FastAPI, and Docker. I build robust, maintainable,
+        and scalable backend architecture.
+
       </p>
-      <div class="flex flex-wrap gap-3 justify-center md:justify-start pt-2">
-        <a href="#work" class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium px-6 py-3 rounded-full transition shadow-lg shadow-indigo-700/25 flex items-center gap-2">
-          <i class="fas fa-arrow-right"></i> View projects
+
+      <!-- Tech -->
+
+      <div class="flex flex-wrap gap-3 mt-8">
+
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
+          Python
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
+          Django
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
+          DRF
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
+          FastAPI
+        </span>
+
+        <span class="px-4 py-2 rounded-full bg-slate-800 border border-slate-700">
+          PostgreSQL
+        </span>
+
+      </div>
+
+      <!-- Buttons -->
+
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <a
+          href="#work"
+          class="group px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 transition flex items-center gap-2 shadow-xl shadow-indigo-700/30">
+
+          View Projects
+
+          <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
+
         </a>
-        <a href="#contact" class="border border-slate-600 hover:border-indigo-400 hover:text-indigo-300 px-6 py-3 rounded-full transition flex items-center gap-2">
-          <i class="fas fa-paper-plane"></i> Contact
+
+        <a
+          href="#contact"
+          class="px-8 py-4 rounded-xl border border-slate-600 hover:border-indigo-400 hover:bg-white/5 transition">
+
+          Contact Me
+
         </a>
+
       </div>
-      <div class="flex gap-5 justify-center md:justify-start text-slate-400 text-xl pt-4">
-        <a href="https://github.com/nh-404" target="_blank" class="hover:text-indigo-300 transition"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/mwlite/in/nh404" target="_blank" class="hover:text-indigo-300 transition"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" class="hover:text-indigo-300 transition"><i class="fab fa-x-twitter"></i></a>
-        <a href="#" class="hover:text-indigo-300 transition"><i class="fab fa-docker"></i></a>
+
+      <!-- Social -->
+
+      <div class="flex gap-5 mt-10 text-2xl">
+
+        <a class="hover:text-indigo-400 transition" href="https://github.com/nh-404">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a class="hover:text-indigo-400 transition" href="https://www.linkedin.com/mwlite/in/nh404">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a class="hover:text-indigo-400 transition" href="https://x.com/nh_404">
+          <i class="fab fa-twitter"></i>
+        </a>
+
+
       </div>
+
     </div>
-    <!-- avatar -->
-    <div class="flex-1 flex justify-center">
-      <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-full overflow-hidden border-4 border-indigo-400/30 shadow-2xl shadow-indigo-500/20 bg-gradient-to-br from-indigo-900/60 to-slate-800 flex items-center justify-center">
-<img src="assets/img/avater/me.jpg" alt="Tasnimul Hasan" class="w-full h-full object-cover transition duration-500 hover:scale-105">
-        <div class="absolute inset-0 rounded-full border-2 border-indigo-400/10 animate-pulse"></div>
+
+    <!-- Right -->
+
+    <div class="flex justify-center">
+
+      <div class="relative">
+
+        <!-- Glow -->
+
+        <div
+          class="absolute inset-0 rounded-full bg-indigo-500 blur-3xl opacity-30 animate-pulse"></div>
+
+        <!-- Avatar -->
+
+        <div
+          class="relative w-72 h-72 lg:w-96 lg:h-96 rounded-full p-2 bg-gradient-to-r from-indigo-500 via-violet-500 to-sky-500">
+
+          <div
+            class="rounded-full overflow-hidden bg-slate-900 w-full h-full">
+
+            <img
+              src="assets/img/avater/me.jpg"
+              class="w-full h-full object-cover hover:scale-110 transition duration-700">
+
+          </div>
+
+        </div>
+
       </div>
+
     </div>
-  </section>
+
+  </div>
+
+  <!-- Scroll Down -->
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+
+    <div class="w-6 h-10 rounded-full border border-slate-500 flex justify-center">
+
+      <div class="w-1 h-3 bg-indigo-400 rounded-full mt-2 animate-bounce"></div>
+
+    </div>
+
+  </div>
+
+</section>
 
   
   <!-- ===== PORTFOLIO (New Projects) ===== -->
@@ -158,14 +299,14 @@
       <!-- card 1 -->
       <div class="bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/60 overflow-hidden card-hover group">
         <div class="h-44 bg-gradient-to-br from-indigo-700/40 to-slate-700 flex items-center justify-center text-5xl text-indigo-300">
-                                <img
+        <img
               src="assets/img/roshidchai/Roshidchai.png"
               alt="Roshidchai Image"
               class="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
               onerror="this.style.display='none'"
             >
         </div>
-        <div class="p-5 space-y-2">
+        <div class="p-7 space-y-2">
           <h3 class="text-xl font-semibold">RoshidChai</h3>
           <p class="text-slate-400 text-sm">A modern web application for creating invoices efficiently.</p>
           <div class="flex flex-wrap gap-1.5 pt-1">
@@ -186,7 +327,7 @@
               class="h-56 w-full object-cover transition duration-500 group-hover:scale-105"
             >
         </div>
-        <div class="p-5 space-y-2">
+        <div class="p-7 space-y-2">
           <h3 class="text-xl font-semibold">MFS~Calc</h3>
           <p class="text-slate-400 text-sm"> A web-based mobile financial service calculator designed
               to make common calculations quick and simple.</p>
@@ -208,7 +349,7 @@
               onerror="this.style.display='none'"
             >
         </div>
-        <div class="p-5 space-y-2">
+        <div class="p-7 space-y-2">
           <h3 class="text-xl font-semibold">QFI-Zen</h3>
           <p class="text-slate-400 text-sm">Generate QR codes for WiFi networks quickly and easily,
               making network sharing more convenient.
@@ -306,16 +447,17 @@
         <div class="space-y-3 text-center md:text-left">
           <h2 class="text-3xl font-bold">About Tasnimul</h2>
           <p class="text-slate-300 leading-relaxed">
-            I'm a backend developer with a passion for automation, scalable architecture, and clean code. 
-            With deep expertise in the Django ecosystem and modern frameworks like FastAPI, I build robust APIs, 
-            orchestrate containers, and streamline deployments — from development to production. 
-            I believe infrastructure should be as elegant as the code it runs.
+I'm a Backend Developer with expertise in Python, Django, and FastAPI, focused on building scalable, secure, and high-performance web applications. I enjoy designing clean architectures, developing robust RESTful APIs, and automating development and deployment workflows.
+
+My experience spans containerization with Docker, CI/CD pipelines, and production deployments, enabling reliable and efficient software delivery. I believe that great software is built on clean code, thoughtful architecture, and infrastructure that is as maintainable and scalable as the applications it supports.
+
+I'm passionate about solving complex backend challenges and creating systems that are efficient, reliable, and built to grow.
+
           </p>
           <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm pt-1">
             <span class="flex items-center gap-1"><i class="fas fa-map-pin text-indigo-400"></i> Dhaka, BD</span>
             <span class="flex items-center gap-1"><i class="fas fa-award text-indigo-400"></i> Backend · DevOps</span>
-            <span class="flex items-center gap-1"><i class="fas fa-terminal text-indigo-400"></i> Linux · Docker</span>
-          </div>
+            
         </div>
       </div>
     </div>
@@ -372,7 +514,7 @@
               <i class="fas fa-envelope"></i>
             </div>
             <h3 class="mt-4 font-semibold text-white">Email</h3>
-            <p class="mt-2 text-sm text-gray-400 break-all">tasnimul.hasan.404@outlook.com</p>
+            <p class="mt-2 text-sm text-gray-400 break-all">tasnimulhasan404@proton.me</p>
           </div>
 
           <!-- Phone -->
@@ -381,7 +523,7 @@
               <i class="fas fa-phone"></i>
             </div>
             <h3 class="mt-4 font-semibold text-white">Phone</h3>
-            <p class="mt-2 text-sm text-gray-400">+880 1234 567890</p>
+            <p class="mt-2 text-sm text-gray-400">+880 1839 300033</p>
           </div>
 
           <!-- Location -->
@@ -405,7 +547,7 @@
         <div class="flex gap-5">
           <a href="https://github.com/nh-404" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">GitHub</a>
           <a href="https://www.linkedin.com/mwlite/in/nh404" target="_blank" rel="noopener noreferrer" class="transition hover:text-white">LinkedIn</a>
-          <a href="mailto:tasnimul.hasan.404@outlook.com" class="transition hover:text-white">Email</a>
+          <a href="mailto:tasnimulhasan404@proton.me" class="transition hover:text-white">Email</a>
         </div>
       </div>
     </div>
